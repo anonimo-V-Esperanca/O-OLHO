@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Creepster', cursive;
+    font-family: 'Rock Salt', cursive;
+    font-family: 'Zilla Slab', serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #000000, #660000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 750px;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .2);
+
+}
+
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, .9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogio span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo {
+    font-size: 10px;
+}
+
+
+.texto{
+    text-align: center;
+
+    p{
+        color: white;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    body{
+        padding: 50px;
+    }
+    .relogio {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .relogio div {
+        width: 80%;
+        margin-bottom: 15px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .relogio span {
+        font-size: 50px;
+    }
+
+    .texto p {
+        font-size: 20px;
+    }
+}
